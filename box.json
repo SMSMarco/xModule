@@ -1,0 +1,36 @@
+{
+    "name":"xModule",
+    "version":"0.0.0",
+    "author":"",
+    "location":"SMSMarco/xModule#v0.0.0",
+    "homepage":"https://github.com/SMSMarco/xModule",
+    "documentation":"https://github.com/SMSMarco/xModule",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/SMSMarco/xModule"
+    },
+    "bugs":"https://github.com/SMSMarco/xModule/issues",
+    "slug":"xModule",
+    "shortDescription":"cb-module-template test 1",
+    "description":"cb-module-template test 1",
+    "type":"modules",
+    "dependencies":{},
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests/resources/app/coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='SMSMarco/xModule#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
